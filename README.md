@@ -18,3 +18,16 @@ NOK (To Be Done):
 5. Reformat project structures (variables, reusable code etc.)
 
 
+Jenkins need Java version from 11, I have 8 
+
+I created Docker image, while running (docker run java-docker) have the error: no main manifest attribute, in /app/app.jar 
+
+To solve it I added in MANIFEST.MF file the name of my class with main method as a started point: 
+
+"Manifest-Version: 1.0
+Main-Class: tests.UI.base.BaseUITest" 
+
+But it didn`t solve the problem
+
+
+
