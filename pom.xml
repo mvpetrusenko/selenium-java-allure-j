@@ -64,6 +64,16 @@
             <version>31.0.1-jre</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+
+
+
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
