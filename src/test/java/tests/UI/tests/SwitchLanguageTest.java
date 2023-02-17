@@ -11,8 +11,7 @@ import static com.codeborne.selenide.Selenide.closeWindow;
 
 public class SwitchLanguageTest {
 
-    //@Test (groups = {"Regression"})
-    @Test (groups = {"SmokeTest"})
+    @Test (groups = {"Regression"})
     public static void main(String[] args) {
         BaseUITest.main(args);
         $(byXpath(SwitchLanguage.changeLanguageButton)).click();

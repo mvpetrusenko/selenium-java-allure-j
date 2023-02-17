@@ -13,8 +13,7 @@ import static com.codeborne.selenide.Selenide.closeWindow;
 
 public class SearchProductTest {
 
-    //@Test (groups = {"Regression"})
-    @Test (groups = {"SmokeTest"})
+    @Test (groups = {"Regression"})
     public static void main(String[] args) {
         BaseUITest.main(args);
         $(byXpath(Header.searchLink)).click();
