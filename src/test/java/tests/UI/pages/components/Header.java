@@ -1,6 +1,7 @@
 package tests.UI.pages.components;
 
 public class Header {
-}
 
-//search bar?
+    public static String searchLink = "//a[@href='/search']";
+
+}

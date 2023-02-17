@@ -10,11 +10,11 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class RestAssuredAPITest {
 
-    static String accessToken = "BQCZfLju7IxC-hXTXFfICre7HNNnV_o3_fnYf58lJWfsnTe_i-G3DcGgktb6w_75ofXFIvGusSXzHgnlu6ps020ruJvr63MGcaX7pqDbDvToZU5PP_AISGy03E8MYy4i6cNDjbFsXUuZUwpjxKdNahdsap23MVD8K4cN6y7iMHwfnABTxsqpxxmLoe1zTnr8aSGAGadbLDO8juVg-kWSesS8cVmbU_r1gIy0ndyAVyrMaN64B_Y0FYo12rmUvKiCIVGkd8A70uQGmgipcQiHdriwVQ49FCppH4A1ILddwwYpUJX4cABUwgj7a0mhBXOUxod4WmbrvKEuLw";
+    static String accessToken = "BQALxOboQXyt7s7HSYOcTRKnOb0ascS3xS-Ywn0fsyQx6d_idrtKJhBOhXu7SXZ3OZfWxGxtmzZ3R740nZIR-7kVLkzeJrbbzLZSfQ050OXBafP1wnLIOg-RlQfN3BXDCR2bawEQplE9Cp5S_ZREINfbzoYlTIUp4qMQAoXld0e79dNnsiOH_CTsqjnTWvOODMTKaOMYaaAGjI1H3HYOCzuvc0zFi8pF5LnOfMixGusTrIgqHlr5L7rDtaXMFqXWA9JIY9pZgVKO2ejdseNeSTEZbV_t7x4_NppS8Nog7xltnbodFSx65bOLZCljAYPDXt2kQPo4IUEH9g";
 
 
     //Get artist
-    @Test
+    @Test (groups = {"SmokeTest"})
     public void getArtist() {
 
         ValidatableResponse response = RestAssured.given().contentType(ContentType.JSON)
@@ -31,7 +31,7 @@ public class RestAssuredAPITest {
 
 
     //Get Artist`s Albums
-    @Test
+    @Test (groups = {"SmokeTest"})
     public void getArtistAlbums() {
         ValidatableResponse response = RestAssured.given().contentType(ContentType.JSON)
                 .baseUri("https://api.spotify.com/").basePath("v1")
@@ -45,7 +45,7 @@ public class RestAssuredAPITest {
     }
 
 
-    @Test
+    @Test (groups = {"SmokeTest"})
     public void getArtistAlbumsNegative() {
         ValidatableResponse response = RestAssured.given().contentType(ContentType.JSON)
                 .baseUri("https://api.spotify.com/").basePath("v1")
@@ -59,7 +59,7 @@ public class RestAssuredAPITest {
     }
 
 
-    @Test
+    @Test (groups = {"SmokeTest"})
     public void createPlaylistNegative() {
 
         String jsonBody = "{" +
