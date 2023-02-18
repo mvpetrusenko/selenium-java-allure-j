@@ -4,8 +4,8 @@ project for AQA portfolio
 OK: 
 
 1. closeWindow() added
-2. project`s been restructured: added folder tests for PO tests 
-3. Jenkins`s been installed, allure report plugin`s been added to Jenkins 
+2. project has been restructured: added folder tests for PO tests 
+3. Jenkins has been installed, allure report plugin has been added to Jenkins 
 4. run test in testng.xml SmokeTest OK
 
 NOK: 
