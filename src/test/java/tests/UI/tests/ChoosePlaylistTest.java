@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import tests.UI.base.BaseUITest;
 import tests.UI.base.Variables;
 import tests.UI.pages.ChoosePlaylist;
 
@@ -40,41 +39,3 @@ public class ChoosePlaylistTest {
 
     }
 }
-
-//
-//
-//public class ChoosePlaylistTest extends BaseUITest {
-//
-//
-//    @Test (groups = {"Regression"})
-//    public static void testChoosePlaylist() {
-//
-//        $(byXpath(ChoosePlaylist.playlistIcon)).click();
-//        $(byXpath(ChoosePlaylist.heartLike)).click();
-//
-//        $(".tippy-content").shouldHave(text("Log in to create and share playlists."));
-//        $(".tippy-content").shouldNotHave(text("aaaaaaaaa"));
-//
-//        closeWindow();
-//
-//    }
-//}
-
-
-//public class ChoosePlaylistTest {
-//
-//
-//    @Test (groups = {"Regression"})
-//    public static void main(String[] args) {
-//        BaseUITest.main(args);
-//
-//        $(byXpath(ChoosePlaylist.playlistIcon)).click();
-//        $(byXpath(ChoosePlaylist.heartLike)).click();
-//
-//        $(".tippy-content").shouldHave(text("Log in to create and share playlists."));
-//        $(".tippy-content").shouldNotHave(text("aaaaaaaaa"));
-//
-//        closeWindow();
-//
-//    }
-//}

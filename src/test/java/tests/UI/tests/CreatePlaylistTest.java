@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import tests.UI.base.BaseUITest;
 import tests.UI.base.Variables;
 import tests.UI.pages.CreatePlaylist;
 
@@ -38,23 +37,3 @@ public class CreatePlaylistTest {
 
     }
 }
-
-//
-//
-
-//public class CreatePlaylistTest {
-//
-//    @Test (groups = {"Regression"})
-//    public static void main(String[] args) {
-//        BaseUITest.main(args);
-//
-//        $(byXpath(CreatePlaylist.addPlaylistButton)).click();
-//        $(".tippy-content").shouldHave(text("Log in to create and share playlists."));
-//        $(".tippy-content").shouldNotHave(text("aaaaaaaaa"));
-//
-//        $(byXpath(CreatePlaylist.nowNowButton)).click();
-//
-//        closeWindow();
-//
-//    }
-//}

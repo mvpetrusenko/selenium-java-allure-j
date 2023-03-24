@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class RestAssuredAPITest {
 
-    static String accessToken = "BQC1NdjHSKftcKiB5lkAIvzCHgr17er7LyAlk0ftx5Ls0H5GPDRsXYoKJwBZywnOCa8MeGZ59JeXH1d1FhhQJ79HeLCZn84xgduWPA-R13CLTvh-f7zZoZlhHgPKrkUlMi-xIBdSApMM9Lunu1p7Ulaz7hDHuVzzQmYsDjYnDNeZVGnT4pxkNEPwpcjSQzX8TyzpfGP2WnB41jbY4Imi7j7wLoBLDvddDSSqEtmmfF0KPqWc8_22hErJUQjOom9d53nqblXlGdM0g0Lhvh0X5X9TH1sPTbHn8v4rIPbU2Z3mqQr_yB34919BCkODfscX6ZWpfndjOwHQdA";
+    static String accessToken = "BQCUdHXXpd8eKwPRJijWNPJUOtFtCuG7pGWI4G7S6gM9_ngJh-Ix3KFwiIwcLzx2S7qKwN5bwH2zf1gs8rWr2iQOvjTbBLfaRRDo3pSfa9sW2kSVuLUsvalkee9ODx6vrN8rKTLF-p0lklMwbJZuT57ZDsv_wKYZXigN8l7voA-iY2zg9AcsS6Q8yf7WXoGkHP1d6MUxy7JCpuMeAiyWqzgXJ9WTzqz6cjtI2WH9iLVge1JJLv2JQlgrTFEhRZ1re3dh0OmLZpGGmgtToDh9J24HMwfybf60GS2RXMm1jg1CFhUf-7DYcmaGQhaccWGEpXV7iRASwFQdMg";
     //Get artist
     @Test (groups = {"SmokeTest"})
     public void getArtist() {
@@ -81,8 +81,6 @@ public class RestAssuredAPITest {
                 .statusLine("HTTP/1.1 403 Forbidden")
                 .body("error.status", equalTo(403))
                 .body("error.message", equalTo("You cannot create a playlist for another user."));
-        //.body(Matchers.equalTo("{\"code\":403,\"meta\":null,\"data\":{\"status\":\"403\","
-        //+ "\"message\":\"You cannot create a playlist for another user.\"}"));
     }
 
 }

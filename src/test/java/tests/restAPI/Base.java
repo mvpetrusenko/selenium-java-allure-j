@@ -11,5 +11,3 @@ public class Base extends RestAssuredAPITest {
 
     }
 }
-
-

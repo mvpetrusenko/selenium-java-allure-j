@@ -25,36 +25,3 @@
 </suite>
 
 
-
-
-
-
-
-        <!--<test name="All Tests" parallel="tests" thread-count="5">-->
-<!--<suite name="All Test  n b Suite">-->
-<!--    <test verbose="2" preserve-order="true" name="C:/Users/Edward/IdeaProjects/selenium-java-allure-docker-jenkins">-->
-
-
-<!--    <test name="Smoke Test" >-->
-<!--        <classes>-->
-<!--            <class name="tests.restAPI.RestAssuredAPITest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Regression Test">-->
-<!--        <classes>-->
-<!--            <class name="tests.UI.tests.ChoosePlaylistTest"/>-->
-<!--            <class name="tests.UI.tests.CreatePlaylistTest"/>-->
-<!--            <class name="tests.UI.tests.SearchProductTest"/>-->
-<!--            <class name="tests.UI.tests.SwitchLanguageTest"/>-->
-
-<!--        </classes>-->
-<!--    </test>-->
-
-
-
-
-
-
-    
-

@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import tests.UI.base.BaseUITest;
 import tests.UI.base.Variables;
 import tests.UI.pages.SearchProduct;
 import tests.UI.pages.components.Header;
@@ -37,22 +36,3 @@ public class SearchProductTest {
         closeWindow();
     }
 }
-
-
-
-//
-//public class SearchProductTest {
-
-//    @Test (groups = {"Regression"})
-//    public static void main(String[] args) {
-//        BaseUITest.main(args);
-//        $(byXpath(Header.searchLink)).click();
-//        $(".CCi1L2OQvgdZvxkRHeKE").shouldHave(text("Browse all"));
-//        $(byXpath(SearchProduct.searchBar)).setValue("love");
-//        $("section[aria-label='Songs']").shouldHave(text("love"));
-//        $("section[aria-label='Songs']").shouldNotHave(text("rrrrrrrrrr"));
-//
-//        closeWindow();
-//
-//    }
-//}
