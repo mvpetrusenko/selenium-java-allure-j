@@ -6,3 +6,5 @@ public class CreatePlaylist {
     public static String nowNowButton = "//button[normalize-space()='Not now']";
 
 }
+
+//

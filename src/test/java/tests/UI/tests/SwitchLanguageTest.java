@@ -33,7 +33,7 @@ public class SwitchLanguageTest {
         $("a[href='/search']").shouldNotHave(text("Search"));
 
 
-        closeWindow();
+        closeWindow(); //
 
     }
 }

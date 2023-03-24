@@ -23,7 +23,7 @@ public class SearchProductTest {
         WebDriverRunner.setWebDriver(driver);
         WebDriverRunner.getWebDriver().manage().window().maximize();
         open("https://open.spotify.com/");
-        $(byXpath(Variables.acceptCookies)).click();
+        $(byXpath(Variables.acceptCookies)).click(); //
     }
 
     @Test(groups = {"Regression"})
