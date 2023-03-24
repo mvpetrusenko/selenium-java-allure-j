@@ -1,5 +1,5 @@
 # selenium-java-allure
-project for AQA portfolio 
+QA AQA  
 
 
 
