@@ -109,6 +109,67 @@
     <br>
     2. both API and UI tests are in Allure report
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    To update build in Jenkins
+    <br>
+    <br>
+    Configure - Source Code Management - enable checkbox Poll SCM - Schedule (* * * * *) to poll the repo every minute
+    <br>
+    Save and run build again
+
+
+
+    <br>
+    <br>
+    http://localhost:8080/job/Selenium%20Java%20Automated%20Test%20Execution/
+    <br>
+    <br>
+    <br>
+    http://localhost:8080/
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    To create new job in Jenkins:
+    <br>
+    <br>
+    1. New item - Configure
+    <br>
+    2. General - enable checkbox GitHub project - project url (https://github.com/mvpetrusenko/petrusenko-selenium-java-allure/)
+    <br>
+    3. Source code management - Git - repository url (https://github.com/mvpetrusenko/petrusenko-selenium-java-allure.git)
+    <br>
+    Credentials (admin/*****)
+    <br>
+    4. Branches to build - Branch Specifier (*/master)
+    <br>
+    5. Build Triggers - enable checkbox Poll SCM - Schedule (* * * * *)
+    <br>
+    6. Build steps - Invoke top-level Maven targets - Goals (clean verify)
+    <br>
+    7. Post-build Actions - Allure Report - Results - Path (allure-results)
+    <br>
+    8. Email Notifications - Recipients (put your email address) - enable checkbox Send e-mail for every unstable build
+    <br>
+    9. Build steps - Add build step - Invoke top-level Maven targets - Goals (test)
+    <br>
+    Advanced - POM (path to your pom.xml file of the project: C:\Users\Edward\IdeaProjects\selenium-java-allure-docker-jenkins)
+    <br>
+    Properties (-Dsurefire.suiteXmlFiles=path_to_testng_xml_file: -Dsurefire.suiteXmlFiles=C:\Users\Edward\IdeaProjects\selenium-java-allure-docker-jenkins/testng.xml
+    <br>
+    10. To add chromedriver to run UI tests in Jenkins build: Manage Jenkins - Manage Plugins
+    <br>
+    Available - search for plugin (Seleniumhq) or install chromedriver in Jenkins plugins
+    <br>
+
+    SAVE!!!
+    <br>
 
 
 
