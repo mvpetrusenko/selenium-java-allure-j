@@ -7,8 +7,110 @@
 <body>
 
 <h5>
-    //!!!!!! to open report:
-    //allure serve allure-results
+     !!!!!! to open report (in the terminal in IDE):
+    <br>
+    allure serve allure-results
+    <br>
+    to run API + UI test cases: run file testng.xml
+    <br>
+    <br>
+    <br>
+
+
+    Part 1
+    <br>
+    <br>
+    OK :
+
+    <br>
+    <br>
+    1. closeWindow() added
+    <br>
+    2. project has been restructured: added folder tests for PO tests
+    <br>
+    3. Jenkins has been installed, allure report plugin has been added to Jenkins
+    <br>
+    4. run test in testng.xml SmokeTest OK
+    <br>
+    <br>
+    <br>
+    NOK:
+    <br>
+    <br>
+
+    1. run tests in testng.xml group Regression NOK
+    <br>
+    2. Allure reports shows only Rest API results, but not also UI test results
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    Part 2
+    <br>
+    <br>
+
+    OK:
+    <br>
+    <br>
+    1. both SmokeTest and Regression test groups run OK<br>
+    the problem was in adding 2 groups for each SmokeTest and Regression,<br>
+    but must be only 1 group for these test groups, like:<br>
+    <br>
+
+
+
+    groups
+    <br>
+    run
+    <br>
+        include name="SmokeTest"/>
+    <br>
+        include name="Regression"/>
+    <br>
+    /run>
+    <br>
+/groups>
+    <br>
+    <br>
+    <br>
+
+
+    2. both API and UI were not executed, only API after running testng.xml file
+    <br>
+    the problem was in SearchProductTest.java... files with method main
+    <br>
+    main method was renamed to testSearchProduct without any arguments
+    <br>
+    because testNG see only @Test as test methods.
+    <br>
+    That`s why UI tests with main method were NOT in the Allure report
+    <br>
+    instead before each UI test was added code:
+
+    <br>
+    <br>
+    @BeforeMethod(alwaysRun = true)
+    public void setUp()
+
+    <br>
+    to run opening browser, going to the main page and click Accept button before each UI test
+
+    <br>
+    <br>
+    Results:
+
+    <br>
+    <br>
+    1. from running testng.xml file BOTH smoke and regression tests PASSED
+    <br>
+    2. both API and UI tests are in Allure report
+
+
+
 
 </h5>
 

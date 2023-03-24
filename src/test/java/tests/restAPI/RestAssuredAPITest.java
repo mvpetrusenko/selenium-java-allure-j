@@ -10,9 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class RestAssuredAPITest {
 
-    static String accessToken = "BQDTSw1GBUvDyKN2vD8SAKcI3AdFFr6V5CcDn2-ZfY78d46dINCY8n6HW3oQ1NenkLCp5bbJLQMhCoVqG38xWhKLS9lDevM20shKQBcELFFH6g_h6-86XkXZYTSI1hnrdp4zu_cUZj_vF9bwV1AimmKDhvaU4KKMFC4Z_V_MYixFcLigYDYQiB_Gf6Z6260p0PPztZr9AvBzaZ8cihizbCJWzReZAKMXdcxy26Q9xWunKI7TRs18qiVf713iITqlaFeacF_Q4XFDIoknKcF7qajjCkz5ssAcOuk1DQflgQU6SAHkVEYWuONX1Mjq5izYARVQti4l8VClrw";
-
-
+    static String accessToken = "BQC1NdjHSKftcKiB5lkAIvzCHgr17er7LyAlk0ftx5Ls0H5GPDRsXYoKJwBZywnOCa8MeGZ59JeXH1d1FhhQJ79HeLCZn84xgduWPA-R13CLTvh-f7zZoZlhHgPKrkUlMi-xIBdSApMM9Lunu1p7Ulaz7hDHuVzzQmYsDjYnDNeZVGnT4pxkNEPwpcjSQzX8TyzpfGP2WnB41jbY4Imi7j7wLoBLDvddDSSqEtmmfF0KPqWc8_22hErJUQjOom9d53nqblXlGdM0g0Lhvh0X5X9TH1sPTbHn8v4rIPbU2Z3mqQr_yB34919BCkODfscX6ZWpfndjOwHQdA";
     //Get artist
     @Test (groups = {"SmokeTest"})
     public void getArtist() {
