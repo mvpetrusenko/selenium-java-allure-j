@@ -19,7 +19,7 @@ public class ChoosePlaylistTest {
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Edward\\Downloads\\chromedriver_win32");
-        System.setProperty("webdriver.chrome.bin", "C:\\Users\\Edward\\Downloads\\chromedriver_win32")
+        System.setProperty("webdriver.chrome.bin", "C:\\Users\\Edward\\Downloads\\chromedriver_win32");
 
         WebDriver driver = new ChromeDriver();
         WebDriverRunner.setWebDriver(driver);
