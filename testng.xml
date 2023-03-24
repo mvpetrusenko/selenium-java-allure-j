@@ -31,7 +31,7 @@
 
 
         <!--<test name="All Tests" parallel="tests" thread-count="5">-->
-<!--<suite name="All Test b Suite">-->
+<!--<suite name="All Test  n b Suite">-->
 <!--    <test verbose="2" preserve-order="true" name="C:/Users/Edward/IdeaProjects/selenium-java-allure-docker-jenkins">-->
 
 
