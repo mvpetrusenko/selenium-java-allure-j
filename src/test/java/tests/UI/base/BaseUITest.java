@@ -12,6 +12,10 @@ import static com.codeborne.selenide.Selenide.*;
 public class BaseUITest {
 
     public BaseUITest() {
+
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+
+
         WebDriver driver = new ChromeDriver();
 
         WebDriverRunner.setWebDriver(driver);

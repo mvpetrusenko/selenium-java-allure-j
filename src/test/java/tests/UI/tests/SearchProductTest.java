@@ -18,6 +18,14 @@ public class SearchProductTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
+
+
+        //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
+
+        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+
+
+
         WebDriver driver = new ChromeDriver();
         WebDriverRunner.setWebDriver(driver);
         WebDriverRunner.getWebDriver().manage().window().maximize();
